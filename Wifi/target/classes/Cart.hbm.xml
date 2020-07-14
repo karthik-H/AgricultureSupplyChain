@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+
+<hibernate-mapping>
+<class name="Esp8266.Wifi.cart.Cart" table="cart">
+<id name="id" column="id" type="int" >
+<generator class="increment"/>
+</id>
+<property name="crop_id" column="crop_id" type="int"/>
+<property name="customer_id" column="customer_id" type="int"/>
+<property name="crop_amount" column="crop_amount" type="int"/>
+<property name="order_date" column="order_date" type="date"/>
+<property name="checkout" column="checkout" type="int"/>
+</class>
+ 
+</hibernate-mapping>
