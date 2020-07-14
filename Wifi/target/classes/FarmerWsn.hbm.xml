@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+
+<hibernate-mapping>
+<class name="Esp8266.Wifi.cropavailable.FarmerWsn" table="farmer_wsn">
+<id name="id" column="id" type="int" >
+<generator class="increment"/>
+</id>
+<property name="farmer_id" column="farmer_id" type="int"/>
+<property name="wsn_id" column="wsn_id" type="int"/>
+</class>
+ 
+</hibernate-mapping>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+
+<hibernate-mapping>
+<class name="Esp8266.Wifi.Location" table="location">
+<id name="id" column="id" type="int" >
+<generator class="increment"/>
+</id>
+<property name="latitude" column="latitude" type="float"/>
+<property name="longitude" column="longitude" type="float"/>
+<property name="accurecy" column="accurecy" type="float"/>
+<property name="soil_ph" column="soil_ph" type="float"/>
+<property name="moisture" column="moisture" type="float" />
+<property name="temperature" column="temperature" type="float" />
+<property name="avg_rainfall" column="avg_rainfall" type="float" />
+
+
+</class>
+ 
+</hibernate-mapping>
